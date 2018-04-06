@@ -10,13 +10,9 @@
     "noImplicitAny": false,
     "outDir": "./public/js/app"
   },
-  "exclude": [
-    "node_modules",
-    "dist",
-    "assets/app/polyfills.ts"
-  ],
+  "exclude": ["node_modules", "dist", "assets/app/polyfills.ts"],
 
   "angularCompilerOptions": {
-    "skipMetadataEmit" : true
+    "skipMetadataEmit": true
   }
 }

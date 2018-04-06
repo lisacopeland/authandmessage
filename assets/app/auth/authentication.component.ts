@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
-import { AuthService } from './auth.service';
+import { AuthService } from "./auth.service";
 
 @Component({
-	selector: 'app-authentication',
-	template: `
+  selector: "app-authentication",
+  template: `
 		<header class="row spacing">
 			<nav class="col-md-8 col-md-offset-2">
 				<ul class="nav nav-tabs">
@@ -19,12 +19,9 @@ import { AuthService } from './auth.service';
 		</div>
 	`
 })
-
 export class AuthenticationComponent {
-
-	constructor(private authService: AuthService) {}
-	isLoggedIn() {
-		return this.authService.isLoggedIn();
-	}
-
+  constructor(private authService: AuthService) {}
+  isLoggedIn() {
+    return this.authService.isLoggedIn();
+  }
 }
